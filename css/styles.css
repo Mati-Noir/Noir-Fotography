@@ -1,0 +1,521 @@
+/* -------------------- Comienzo del grid del index -------------------- */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+html {
+    height: 100%;
+}
+
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2rem;
+    min-height: 100%;
+}
+
+
+p{
+    padding: 20px;
+}
+
+
+.grid-container > * {
+    box-shadow: -1px 1px 7px 0px rgba(0, 0, 0, 0.75);
+    border-radius: 4px;
+    padding: 10px;
+    text-align: center;
+}
+
+
+.header { 
+    grid-area: header;
+}
+
+
+.navbar{
+    grid-area: navbar;
+    background-color: #afd6af;
+}
+
+
+.main{
+    grid-area: main;
+    background-color: lightcyan;
+}
+
+
+ .footer{
+    grid-area: footer;
+}
+
+/* Sector de los grids y media queries para desktop / tablet / mobile */
+
+.grid-container {
+    display: grid;
+    gap: 10px;
+    grid-template-areas: 
+    "header"
+    "navbar"
+    "main"
+    "footer";
+}
+
+
+@media (min-width: 250px) {
+    .grid-container {
+        grid-template-columns: auto;
+        grid-template-rows: 150px 170px auto 260px;
+        grid-template-areas: 
+        "header header"
+        "navbar navbar"
+        "main main"
+        "footer footer";
+    }
+}
+
+
+@media (min-width:768px) {
+    .grid-container {
+        grid-template-columns: 400px auto;
+        grid-template-rows: 160px auto 200px;
+        grid-template-areas: 
+        "header navbar"
+        "main main"
+        "footer footer";
+    }
+}
+
+
+@media (min-width: 1024px) {
+    .grid-container {
+        grid-template-columns: 400px auto;
+        grid-template-rows: 150px auto 200px;
+        grid-template-areas: 
+        "header navbar"
+        "main main"
+        "footer footer";
+    }
+}
+
+
+/* Fin del sector grid-container */
+
+/* -------------------------------------------------------- */
+
+/* Comienzo del sector Header */
+
+
+.header{
+    display: flex;
+    justify-content: center;
+    background-color: lightblue;
+}
+
+
+.navbar ul li a{
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    font-family: 'Montserrat', sans-serif;
+    font-style: italic;
+    text-decoration: none;
+    font-size: 130%;
+    -webkit-transition: font-size 1s ease;
+    transition: font-size 1s ease; 
+} 
+
+
+.navbar ul li a:hover{
+    font-size: 35px;
+}
+
+
+ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+
+li a{
+    color:black;
+    font-weight: bold;
+}
+
+
+.links_nav{
+    padding-left: 75px;
+    padding-right: 75px;
+}
+
+
+/* Fin del sector Navbar / Header */
+
+/* -------------------------------------------------------- */
+
+/* Comienzo del sector index */
+
+
+footer{
+    background-color:lightsteelblue;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    list-style-type: none;
+
+}
+
+
+footer li{
+    display: inline-block;
+    margin: 2.5%; 
+    font-style: italic;
+    text-align: center;
+    text-decoration: none;
+}
+
+
+footer li a{
+    text-decoration: none;
+}
+
+
+footer p{
+    display: inline-block;
+    margin: 2%;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+/* Fin del sector footer */
+
+/* -------------------------------------------------------- */
+
+/* Comienzo del sector index */
+
+.castillo_foto{
+    width: 100%;
+    margin-top: 15px;
+    height: auto;
+}
+
+
+.segunda_portada{
+    width: 100%;
+    margin-top: 15px;
+    height: auto;
+}
+
+
+.radiocity{
+    width: 100%;
+    margin-top: 15px;
+    height: auto;
+}
+
+
+h2{
+    background-color:lightblue;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    text-transform: uppercase;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-style: italic;
+    -webkit-transition: font-size 1s ease;
+    transition: font-size 1s ease;
+}
+
+
+h2:hover{
+    font-size: 35px;
+}
+
+/* Fin del index */
+
+/* -------------------------------------------------------- */
+
+/* Comienzo del Sector Biografia */
+
+.foto_perfil{
+    width: 100%;
+    height:auto;
+    max-width: 700px;
+    margin-bottom: 1%;
+    -webkit-transition: 1s linear;
+    transition: 1s linear;
+}
+
+
+.foto_perfil:hover{
+    -webkit-box-shadow: 10px 10px 14px 2px rgba(0,0,0,0.47);
+    box-shadow: 10px 10px 14px 2px rgba(0,0,0,0.47);
+}
+
+
+.sector_biografia{
+    font-family: 'Montserrat', sans-serif;
+    padding: 3%;
+    text-align: center;
+    line-height: 150%;
+}
+
+
+.autor_biografia{
+    -webkit-transition: font-size 1s ease;
+    transition: font-size 1s ease;
+}
+
+
+.autor_biografia:hover{
+    font-size: 35px;
+}
+
+/* Fin del sector Biografia */
+
+/* -------------------------------------------------------- */
+
+/* Comienzo del Sector Anecdotas */
+
+.estructura_anecdotas{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.foto_a_1{
+    width: 100%;
+    height: auto;
+    max-width: 950px;
+/*     padding: 15px; */
+}
+
+
+.texto_a_1{
+    width: 100%;
+    text-align: center;
+    max-width: 950px;
+    padding-top: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 15px;
+    line-height: 150%;
+    background-color:lightskyblue;
+}
+
+
+.texto_a_2{
+    width: 100%;
+    text-align: center;
+    max-width: 950px;
+     padding-top: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 15px;
+    line-height: 150%;
+    background-color:lightgreen;
+}
+
+
+.foto_a_2{
+    width: 100%;
+    height: auto;
+    max-width: 950px;
+/*     padding: 10px; */
+}
+
+
+.titulo_texto_a{
+    padding-top: 10px;
+}
+
+
+.texto_a_1 h3{
+    -webkit-transition: font-size 1s ease;
+    transition: font-size 1s ease;
+}
+
+
+.texto_a_1 h3:hover{
+    font-size: 35px;
+}
+
+.texto_a_2 h3{
+    -webkit-transition: font-size 1s ease;
+    transition: font-size 1s ease;
+}
+
+
+.texto_a_2 h3:hover{
+    font-size: 35px;
+}
+
+
+/* Fin del sector Anecdotas */
+
+/* -------------------------------------------------------- */
+
+/* Comienzo del Sector Galeria */
+
+.estructura_galeria{
+    background-size: cover;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 30px;
+    justify-content: space-evenly;
+    gap: 10px;
+    width: 100%;
+    height: auto;
+    -webkit-transition: 1s linear;
+    transition: 1s linear;
+}
+
+
+.foto_1_galeria{
+    filter: grayscale(100%);
+    transition: 6s;
+}
+
+
+.foto_2_galeria{
+    filter: grayscale(100%);
+    transition: 6s;
+}
+
+
+.foto_3_galeria{
+    filter: grayscale(100%);
+    transition: 6s;
+}
+
+
+.foto_4_galeria{
+    filter: grayscale(100%);
+    transition: 6s;
+}
+
+
+.foto_5_galeria{
+    filter: grayscale(100%);
+    transition: 6s;
+}
+
+
+.foto_6_galeria{
+    filter: grayscale(100%);
+    transition: 6s;
+}
+
+
+.foto_1_galeria:hover{
+    -webkit-transition: 0.5s linear;
+    transition: 0.5s linear;
+    -webkit-box-shadow: 10px 10px 14px 2px rgba(0,0,0,0.47);
+    box-shadow: 10px 10px 14px 2px rgba(0,0,0,0.47);
+    filter: none
+}
+
+
+.foto_2_galeria:hover{
+    -webkit-transition: 0.5s linear;
+    transition: 0.5s linear;
+    -webkit-box-shadow: 10px 10px 14px 2px rgba(0,0,0,0.47);
+    box-shadow: 10px 10px 14px 2px rgba(0,0,0,0.47);
+    filter: none
+}
+
+
+.foto_3_galeria:hover{
+    -webkit-transition: 0.5s linear;
+    transition: 0.5s linear;
+    -webkit-box-shadow: 10px 10px 14px 2px rgba(0,0,0,0.47);
+    box-shadow: 10px 10px 14px 2px rgba(0,0,0,0.47);
+    filter: none
+}
+
+
+.foto_4_galeria:hover{
+    -webkit-transition: 0.5s linear;
+    transition: 0.5s linear;
+    -webkit-box-shadow: 10px 10px 14px 2px rgba(0,0,0,0.47);
+    box-shadow: 10px 10px 14px 2px rgba(0,0,0,0.47);
+    filter: none
+}
+
+
+.foto_5_galeria:hover{
+    -webkit-transition: 0.5s linear;
+    transition: 0.5s linear;
+    -webkit-box-shadow: 10px 10px 14px 2px rgba(0,0,0,0.47);
+    box-shadow: 10px 10px 14px 2px rgba(0,0,0,0.47);
+    filter: none
+}
+
+
+.foto_6_galeria:hover{
+    -webkit-transition: 0.5s linear;
+    transition: 0.5s linear;
+    -webkit-box-shadow: 10px 10px 14px 2px rgba(0,0,0,0.47);
+    box-shadow: 10px 10px 14px 2px rgba(0,0,0,0.47);
+    filter: none
+}
+
+/* Fin del sector Galeria */
+
+/* -------------------------------------------------------- */
+
+/* Comienzo del Sector Formulario */
+
+.estructura_formulario{
+    background-image: url(../images/Atardecer.jpg);
+    background-size: cover
+}
+
+
+.formulario{
+    font-family: 'Montserrat', sans-serif;
+    line-height: 100px;
+    font-size: 200%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: white;
+    align-items: center;
+}
+
+
+.formulario input{
+    font-family:  'Montserrat', sans-serif;
+    height: 30px;
+    width: 400px;
+}
+
+
+.formulario textarea{
+    font-family:  'Montserrat', sans-serif;
+    height: 200px; 
+    width: 400px;
+
+}
+
+
+.boton{
+    color: blue;
+    font-weight: bold;
+    font-size: large;
+    background-color:lightblue;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+/* Fin del sector Contacto */
+
+/* -------------------------------------------------------- */
