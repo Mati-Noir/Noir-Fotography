@@ -183,6 +183,8 @@ footer li{
 
 footer li a{
     text-decoration: none;
+    -webkit-transition: font-size 1s ease;
+    transition: font-size 1s ease;
 }
 
 
@@ -193,6 +195,10 @@ footer p{
     text-align: center;
 }
 
+
+.footer li a:hover{
+font-size: 20px;
+}
 
 /* Fin del sector footer */
 
@@ -347,6 +353,7 @@ h2:hover{
 .texto_a_1 h3:hover{
     font-size: 35px;
 }
+
 
 .texto_a_2 h3{
     -webkit-transition: font-size 1s ease;
@@ -514,7 +521,15 @@ h2:hover{
     background-color:lightblue;
     margin-bottom: 20px;
     margin-top: 10px;
+    -webkit-transition: font-size 1s ease;
+    transition: font-size 1s ease;
 }
+
+
+.boton:hover{
+    font-size: 25px;
+}
+
 
 /* Fin del sector Contacto */
 
