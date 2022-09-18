@@ -6,17 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
      <!-- CSS -->
+    <link rel="stylesheet" href="../css/styles.css">
 
-     <link rel="stylesheet" href="../css/styles.css">
+     <!-- Bootstrap CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
 
      <!-- Tipografia -->
- 
      <link rel="preconnect" href="https://fonts.googleapis.com">
      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
      <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,400;0,500;0,600;0,700;1,100;1,400&display=swap" rel="stylesheet">
  
      <!-- Titulo de la Pagina web actual -->
- 
      <title>Menu Principal</title>
  
      <!-- Icono de la Pestaña del navegador -->
@@ -39,31 +39,118 @@
             <li class="links_nav"><a href="../paginas/Contacto.html">Contacto</a></li>
         </ul>
     </nav>  
+    
 
     <article class="main">
-        <img src="../images/Castillo.jpg" alt="" class="castillo_foto">
-        <h2>Recuperar el valor de la aventura por el descubrimiento</h2>
-        <p>El famoso viaje de vacaciones, donde uno puede descansar y desconectarse de la realidad visitando el resto del mundo. Pero a menudo pasamos de alto el valor historico y simbolico del pais o sus maravillas que quedan olvidados en el tiempo. Por eso te presentamos un poco de todo, desde los clasicos destinos europeos, hasta los destinos simbolicos y ricos en historia.  </p>
-        
-        <img src="../images/Fondo_profundidad.jpg" alt="" class="segunda_portada">
-        <h2>Las mejores imagenes para tus viajes y eventos de la vida</h2>
-        <p>Presentando un alto nivel de profesionalismo para capturar e inmortalizar los mejores hechos de cada persona, sus familiares y el ambiente que los rodea. Sea un viaje a un destino turistico, conseguir la foto perfecta del casamiento o directamente captar la mayor atencion a tu marca/producto, lo tenemos todo para usted.</p>
 
-        <img src="../images/RadioCity.jpg" alt="" class="radiocity">
-        <h2>Nuestra invitacion a compartir anecdotas sobre el mundo</h2>
-        <p>Aparte de las mejores imagenes para cada tipo de servicio, tambien te presentamos el detras de escena y una breve introduccion sobre los diferentes destinos turisticos, junto con alguna recomendacion o opinion que necesites saber antes de ir.</p>
+        <!-- Carrosuel del docs bootstrap -->
+
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="../images/Castillo.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h3>Recuperar el valor de la aventura por el descubrimiento</h3>
+                  <p>El famoso viaje de vacaciones, donde uno puede descansar y desconectarse de la realidad visitando el resto del mundo. Pero a menudo pasamos de alto el valor historico y simbolico del pais o sus maravillas que quedan olvidados en el tiempo. Por eso te presentamos un poco de todo, desde los clasicos destinos europeos, hasta los destinos simbolicos y ricos en historia. </p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="../images/Fondo_profundidad.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h3>Las mejores imagenes para tus viajes y eventos de la vida</h3>
+                  <p>Presentando un alto nivel de profesionalismo para capturar e inmortalizar los mejores hechos de cada persona, sus familiares y el ambiente que los rodea. Sea un viaje a un destino turistico, conseguir la foto perfecta del casamiento o directamente captar la mayor atencion a tu marca/producto, lo tenemos todo para usted.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="../images/Paraiso_1.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h3>Nuestra invitacion a compartir anecdotas sobre el mundo</h3>
+                  <p>Aparte de las mejores imagenes para cada tipo de servicio, tambien te presentamos el detras de escena y una breve introduccion sobre los diferentes destinos turisticos, junto con alguna recomendacion o opinion que necesites saber antes de ir.</p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+
+          <!-- Fin carousel bootstrap docs -->
+
+          <!-- Comienzo de los cards en el index -->
+        <div class="estructura_cartas">
+          <div class="card" style="width: 400px" >
+            <img src="../images/fotografo_ejemplo.jpg" class="card-img-top" alt="..." style="height: 600px">
+          
+            <div class="card-body">
+              <h5 class="card-title">La estrella detras de la foto</h5>
+              <p class="card-text">Muchas veces contemplamos con gusto una buena fotografia, una obra de arte, pero pocas veces preguntamos quien es el autor. Vamos a darle un vistazo. </p>
+              <a href="#" class="btn btn-primary">Ir a Biografia</a>
+            </div>
+          </div>
+
+          <div class="card" style="width: 400px" >
+            <img src="../images/Puerta_Jardin.jpg" class="card-img-top" alt="..." style="height: auto">
+          
+            <div class="card-body">
+              <h5 class="card-title">Nuestras Experiencias</h5>
+              <p class="card-text">Toda aventura tiene su historia, te invitamos a conocer el detras de escena de cada una y compartir los momentos mas destacables y recomendaciones a la hora de viajar .</p>
+              <a href="#" class="btn btn-primary">Ir a Anecdotas</a>
+            </div>
+          </div>
+
+          <div class="card" style="width: 400px" >
+            <img src="../images/Angkor_Wat.jpg" class="card-img-top" alt="..." style="height: 600px">
+          
+            <div class="card-body">
+              <h5 class="card-title">Las Mejores portadas</h5>
+              <p class="card-text">Te presentamos las mejores imagenes de nuestra experiencia alrededor del mundo, junto con el nivel de profesionalismo de la fotografa estrella.</p>
+              <a href="#" class="btn btn-primary">Ir a Galeria</a>
+            </div>
+          </div>
+
+          <div class="card" style="width: 400px" >
+            <img src="../images/Contacto.jpg" class="card-img-top" alt="..." style="height: auto">
+          
+            <div class="card-body">
+              <h5 class="card-title">Contactanos!</h5>
+              <p class="card-text">Tienes alguna duda para tu proximo viaje o alguna recomendacion que necesites antes de elegir tu proximo destino? Escribenos y te lo solucionamos.</p>
+              <a href="#" class="btn btn-primary">Ir a Contacto</a>
+            </div>
+          </div>
+
+        </div>
+
+          <!-- Fin card index bootstrap docs -->
+
+
     </article>
 
     <footer class="footer">
-        <li><a href="#!">Terminos y Condiciones</a></li>
-        <li><a href="#!">Sobre Nosotros</a></li>
-        <li><a href="#!">Politicas de Privacidad</a></li>
-        <p>Noir & Company 2022 ©</p>
+      <nav class="nav flex-column">
+        <a class="nav-link active" aria-current="page" href="">Terminos y Condiciones</a>
+        <a class="nav-link" href="#">Sobre Nosotros</a>
+        <a class="nav-link" href="#">Politicas de Privacidad</a>
+      </nav>
+      <p>Noir & Company 2022 ©</p>
         <li><a href="https://www.coderhouse.com/" target="_blank"><img src="../images/coderhouse_logo.png" width="50" height="50"></a></li>
         <li><a href="https://www.facebook.com/Coderhouse/" target="_blank"><img src="../images/Facebook_icon.png" width="50" height="50"></a></li>
         <li><a href="https://twitter.com/coderhouse?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank"><img src="../images/twitter.png" width="50" height="50"></a></li>
         <li><a href="https://www.instagram.com/coderhouse/?hl=es" target="_blank"><img src="../images/instagram.png" width="50" height="50"></a></li>
     </footer>
+
+
+    <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
 
 </body>
 </html>
