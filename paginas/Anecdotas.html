@@ -11,6 +11,9 @@
      <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
 
+    <!-- Bootstrap icons CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+
      <!-- Tipografia -->
      <link rel="preconnect" href="https://fonts.googleapis.com">
      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -23,9 +26,10 @@
      <link rel="shortcut icon" href="../images/icono_camara2.png"
 
 </head>
-<body>
+<body class="grid-container">
+  
     <header class="header">
-        <img src="../images/Logo.png" alt="" class="noir_logo">
+        <img src="../images/Logo2.png" alt="" class="noir_logo">
     </header>
 
     <nav class="navbar">
@@ -44,32 +48,32 @@
             <div class="card" style="width: 50rem;">
                 <img src="../images/Costa.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
-                    <h1>Titulo de anecdota 1</h1>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <h1>En el Camino</h1>
+                  <p class="card-text">Las costas de Chapadmalal, al sur de la provincia de Buenos Aires, es un lugar ideal para retratar los acantilados, sobre todo al atardecer. Muchas familias, parejas y amigos llevan su vehículo para disfrutar hasta el horario que quieran de la tarde. Antes de irme, decidí retratar el momento en el que una camioneta parece ir hacia el mar, sin miedo, como si no tuviese problema en perderse en el acantilado y el océano. </p>
                 </div>
               </div>
 
               <div class="card" style="width: 50rem;">
                 <img src="../images/Playa.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
-                    <h1>Titulo de anecdota 2</h1>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <h1>Las Cuatro Hermanas</h1>
+                  <p class="card-text">Mi momento favorito para ir a la playa es por la mañana. El mar está tranquilo, no suele haber mucho viento y las familias no suelen ir hasta la media mañana o incluso el mediodía. Además, es el momento donde suelen aparecer situaciones particulares para retratar, cómo estas 4 sombrillas disfrutando un rato de paz antes de que lleguen los turistas</p>
                 </div>
               </div>
 
               <div class="card" style="width: 50rem;">
                 <img src="../images/Monumento.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
-                    <h1>Titulo de anecdota 3</h1>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <h1>Monumento en DC</h1>
+                  <p class="card-text">Visité Washington a principios de 2019, tres días alcanzaban para la capital de los Estados Unidos teniendo en cuenta su tamaño y que la mayor atracción son sus famosos museos. Sin embargo, mi visita fue durante la época del shutdown durante el gobierno de Trump, por lo que todos las atracciones estaban cerradas; pero eso no me impidió ver sus famosos monumentos.</p>
                 </div>
               </div>
 
               <div class="card" style="width: 50rem;">
                 <img src="../images/Roca2.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
-                    <h1>Titulo de anecdota 4</h1>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <h1>El Centinela</h1>
+                  <p class="card-text">A 350 km de la capital de Buenos Aires, el tranquilo pueblo de Tandil es un lugar ideal para alejarse del ajetreo de ciudad de la furia y degustar sus famosos embutidos. Famosa también por sus puntos panorámicos, El Centinela es uno de los lugares más elegidos para tomar un mate mientras disfrutamos el atardecer.</p>
                 </div>
               </div>
 
@@ -77,14 +81,19 @@
     </article>
     
     <footer class="footer">
-        <li><a href="#!">Terminos y Condiciones</a></li>
-        <li><a href="#!">Sobre Nosotros</a></li>
-        <li><a href="#!">Politicas de Privacidad</a></li>
-        <p>Noir & Company 2022 ©</p>
-        <li><a href="https://www.coderhouse.com/" target="_blank"><img src="../images/coderhouse_logo.png" width="50" height="50"></a></li>
-        <li><a href="https://www.facebook.com/Coderhouse/" target="_blank"><img src="../images/Facebook_icon.png" width="50" height="50"></a></li>
-        <li><a href="https://twitter.com/coderhouse?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank"><img src="../images/twitter.png" width="50" height="50"></a></li>
-        <li><a href="https://www.instagram.com/coderhouse/?hl=es" target="_blank"><img src="../images/instagram.png" width="50" height="50"></a></li>
+      <div class="footer-content">
+        <h3>Noir & Company 2022 ©</h3>
+        <a href="#">Terminos y Condiciones</a> <a href="#">Politicas de Privacidad</a> <a href="#">Sobre Nosotros</a>
+        <ul class="socials">
+          <li><a href="https://www.facebook.com/Coderhouse/" target="_blank"><i class="bi bi-facebook"></i></a></li>
+          <li><a href="https://www.instagram.com/coderhouse/?hl=es" target="_blank"><i class="bi bi-instagram"></i></a></li>
+          <li><a href="https://twitter.com/coderhouse?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank"><i class="bi bi-twitter"></i></a></li>
+          <li><a href="#"><i class="bi bi-linkedin" target="_blank"></i></a></li>
+        </ul>
+<!--         <div class="footer-bottom">
+          <p>Noir & Company 2022 ©</p>
+        </div> -->
+    </div>
     </footer>
     
 </body>

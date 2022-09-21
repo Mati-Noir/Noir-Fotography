@@ -39,13 +39,13 @@ p{
 
 .navbar{
     grid-area: navbar;
-    background-color: #afd6af;
+    background-color:#888;
 }
 
 
 .main{
     grid-area: main;
-    background-color: lightcyan;
+    background-color:lightsteelblue;
 }
 
 
@@ -57,7 +57,7 @@ p{
 
 .grid-container {
     display: grid;
-    gap: 10px;
+    gap: 0px;
     grid-template-areas: 
     "header"
     "navbar"
@@ -82,7 +82,7 @@ p{
 @media (min-width:768px) {
     .grid-container {
         grid-template-columns: 400px auto;
-        grid-template-rows: 160px auto 200px;
+        grid-template-rows: 170px auto 200px;
         grid-template-areas: 
         "header navbar"
         "main main"
@@ -112,7 +112,7 @@ p{
 .header{
     display: flex;
     justify-content: center;
-    background-color: lightblue;
+    background-color: #222;
 }
 
 
@@ -130,7 +130,7 @@ p{
 
 
 .navbar ul li a:hover{
-    font-size: 30px;
+    font-size: 26px;
 }
 
 
@@ -159,63 +159,88 @@ li a{
 
 /* -------------------------------------------------------- */
 
-/* Comienzo del sector index */
-
+/* Comienzo del sector footer renovado */
 
 footer{
-    background-color:lightsteelblue;
+    background:  #111;
+    height: auto;
+    padding-top: 40px;
+    color: aliceblue;
+}
+
+
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+
+.footer-content h3{
+    font-size: 1,8rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 3rem;
+}
+
+
+.footer-content a{
     text-decoration: none;
-    font-family: 'Montserrat', sans-serif;
-    list-style-type: none;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+    color:cadetblue;
 }
 
 
-footer li{
+.socials{
+    list-style: none;
     display: flex;
-    flex-wrap: wrap;
-    margin: 2.5%; 
-    font-style: italic;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+}
+
+
+.socials li{
+    margin: 0 10px;
+}
+
+
+.socials a{
+    text-decoration: none;
+    color: #fff;
+}
+
+
+.socials a i{
+    font-size: 1.1rem;
+    transition: color .4s ease;
+}
+
+
+.socials a:hover i{
+    color: aqua;
+}
+
+
+.footer-bottom{
+    background: #000;
+    width: 99vw;
+/*     padding: 20px 0; */
     text-align: center;
 }
 
-
-footer p{
-    display: inline-block;
-    margin: 2%;
-    font-weight: bold;
-    text-align: center;
+.footer-bottom p{
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
 }
-
 
 /* Fin del sector footer */
 
 /* -------------------------------------------------------- */
 
 /* Comienzo del sector index */
-
-.castillo_foto{
-    width: 100%;
-    margin-top: 15px;
-    height: auto;
-}
-
-
-.segunda_portada{
-    width: 100%;
-    margin-top: 15px;
-    height: auto;
-}
-
-
-.radiocity{
-    width: 100%;
-    margin-top: 15px;
-    height: auto;
-}
-
 
 h2{
     background-color:lightblue;
@@ -233,6 +258,16 @@ h2{
 
 h2:hover{
     font-size: 35px;
+}
+
+
+.estructura_cartas{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    gap: 30px;
 }
 
 /* Fin del index */
@@ -308,88 +343,13 @@ h1:hover{
 }
 
 
-.foto_1_galeria{
+.fotos_galeria{
     filter: grayscale(100%);
     transition: 6s;
 }
 
 
-.foto_2_galeria{
-    filter: grayscale(100%);
-    transition: 6s;
-}
-
-
-.foto_3_galeria{
-    filter: grayscale(100%);
-    transition: 6s;
-}
-
-
-.foto_4_galeria{
-    filter: grayscale(100%);
-    transition: 6s;
-}
-
-
-.foto_5_galeria{
-    filter: grayscale(100%);
-    transition: 6s;
-}
-
-
-.foto_6_galeria{
-    filter: grayscale(100%);
-    transition: 6s;
-}
-
-
-.foto_1_galeria:hover{
-    -webkit-transition: 0.5s linear;
-    transition: 0.5s linear;
-    -webkit-box-shadow: 10px 10px 14px 2px rgba(0,0,0,0.47);
-    box-shadow: 10px 10px 14px 2px rgba(0,0,0,0.47);
-    filter: none
-}
-
-
-.foto_2_galeria:hover{
-    -webkit-transition: 0.5s linear;
-    transition: 0.5s linear;
-    -webkit-box-shadow: 10px 10px 14px 2px rgba(0,0,0,0.47);
-    box-shadow: 10px 10px 14px 2px rgba(0,0,0,0.47);
-    filter: none
-}
-
-
-.foto_3_galeria:hover{
-    -webkit-transition: 0.5s linear;
-    transition: 0.5s linear;
-    -webkit-box-shadow: 10px 10px 14px 2px rgba(0,0,0,0.47);
-    box-shadow: 10px 10px 14px 2px rgba(0,0,0,0.47);
-    filter: none
-}
-
-
-.foto_4_galeria:hover{
-    -webkit-transition: 0.5s linear;
-    transition: 0.5s linear;
-    -webkit-box-shadow: 10px 10px 14px 2px rgba(0,0,0,0.47);
-    box-shadow: 10px 10px 14px 2px rgba(0,0,0,0.47);
-    filter: none
-}
-
-
-.foto_5_galeria:hover{
-    -webkit-transition: 0.5s linear;
-    transition: 0.5s linear;
-    -webkit-box-shadow: 10px 10px 14px 2px rgba(0,0,0,0.47);
-    box-shadow: 10px 10px 14px 2px rgba(0,0,0,0.47);
-    filter: none
-}
-
-
-.foto_6_galeria:hover{
+.fotos_galeria:hover{
     -webkit-transition: 0.5s linear;
     transition: 0.5s linear;
     -webkit-box-shadow: 10px 10px 14px 2px rgba(0,0,0,0.47);
@@ -422,19 +382,10 @@ h1:hover{
 }
 
 .estructura_boton{
-    padding: 200px
+    padding: 100px
 }
 
 
 /* Fin del sector Contacto */
 
 /* -------------------------------------------------------- */
-
-.estructura_cartas{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    gap: 30px;
-}
