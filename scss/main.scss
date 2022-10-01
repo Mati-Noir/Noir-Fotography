@@ -1,5 +1,13 @@
 /* -------------------- Comienzo del grid del index -------------------- */
 
+/* Variables Map Color (Vista en el archivo SASS) */
+$estilos: (
+    colorLogosRedes: #fff,
+    colorLetrasFormulario: white,
+    colorFondoMain: lightsteelblue,
+);
+/* Fin mapa de variables (Vista en el archivo SASS) */
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -43,7 +51,7 @@ p{
 
 .main{
     grid-area: main;
-    background-color:lightsteelblue;
+    background-color: map-get($estilos, colorFondoMain)
 }
 
 
@@ -51,57 +59,27 @@ p{
     grid-area: footer;
 }
 
-/* Sector de los grids y media queries para desktop / tablet / mobile */
+/* Fin del sector grid y sus denominaciones */
 
-.grid-container {
-    display: grid;
-    gap: 0px;
-    grid-template-areas: 
-    "header"
-    "navbar"
-    "main"
-    "footer";
+/* -------------------------------------------------------- */
+
+/* Comienzo del Sector Mixins (SASS II) */
+
+/* Los mixins se van a encontrar dentro del archivo main.sass, por lo que en el main.css no se van a visualizar */
+
+@mixin flex-row-center{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
-
-@media (min-width: 250px) {
-    .grid-container {
-        grid-template-columns: auto;
-        grid-template-rows: 130px 170px auto 300px;
-        grid-template-areas: 
-        "header header"
-        "navbar navbar"
-        "main main"
-        "footer footer";
-    }
+@mixin flex-wrap-space_evenly{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 
-
-@media (min-width:768px) {
-    .grid-container {
-        grid-template-columns: 400px auto;
-        grid-template-rows: 170px auto 200px;
-        grid-template-areas: 
-        "header navbar"
-        "main main"
-        "footer footer";
-    }
-}
-
-
-@media (min-width: 1024px) {
-    .grid-container {
-        grid-template-columns: 400px auto;
-        grid-template-rows: 100px auto 200px;
-        grid-template-areas: 
-        "header navbar"
-        "main main"
-        "footer footer";
-    }
-}
-
-
-/* Fin del sector grid-container */
+/* Fin del sector Mixins */
 
 /* -------------------------------------------------------- */
 
@@ -183,18 +161,24 @@ footer{
 }
 
 
+.footer-content--color{
+    @extend .footer-content;
+    color:blanchedalmond;
+    font-style: italic;
+}
+
+
 .socials{
+    @include flex-row-center;
     list-style: none;
-    display: flex;
     align-items: center;
-    justify-content: center;
     margin: 1rem 0 3rem 0;
     li{
         margin: 0 10px;
     }
     a{
         text-decoration: none;
-        color: #fff;
+        color: map-get($estilos, colorLogosRedes);
         &:hover i{
             color: aqua;
         }
@@ -243,9 +227,7 @@ h2{
 
 
 .estructura_cartas{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+    @include flex-wrap-space_evenly;
     padding-top: 50px;
     padding-bottom: 50px;
     gap: 30px;
@@ -281,9 +263,9 @@ h2{
 /* Comienzo del Sector Anecdotas */
 
 .estructura_anecdotas{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+    @include flex-wrap-space_evenly;
+    width: 100%;
+    height: auto;
     padding: 10px;
     gap: 30px;
     text-align: center;
@@ -309,11 +291,8 @@ h1{
 /* Comienzo del Sector Galeria */
 
 .estructura_galeria{
-    background-size: cover;
-    display: flex;
-    flex-wrap: wrap;
+    @include flex-wrap-space_evenly;
     padding: 30px;
-    justify-content: space-evenly;
     gap: 10px;
     width: 100%;
     height: auto;
@@ -348,14 +327,14 @@ h1{
 }
 
 
- .formulario{
+.formulario{
     font-family: 'Montserrat', sans-serif;
     line-height: 100px;
     font-size: 200%;
     display: flex;
     flex-direction: column;
     gap: 10px;
-    color: white;
+    color: map-get($estilos, colorLetrasFormulario);
     align-items: center;
 }
 
@@ -365,5 +344,59 @@ h1{
 
 
 /* Fin del sector Contacto */
+
+/* -------------------------------------------------------- */
+
+/* Sector de los grids y media queries para desktop / tablet / mobile */
+
+.grid-container {
+    display: grid;
+    gap: 0px;
+    grid-template-areas: 
+    "header"
+    "navbar"
+    "main"
+    "footer";
+}
+
+
+@media (min-width: 250px) {
+    .grid-container {
+        grid-template-columns: auto;
+        grid-template-rows: 130px 170px auto 200px;
+        grid-template-areas: 
+        "header header"
+        "navbar navbar"
+        "main main"
+        "footer footer";
+    }
+}
+
+
+@media (min-width:768px) {
+    .grid-container {
+        grid-template-columns: 400px auto;
+        grid-template-rows: 170px auto 250px;
+        grid-template-areas: 
+        "header navbar"
+        "main main"
+        "footer footer";
+    }
+}
+
+
+@media (min-width: 1024px) {
+    .grid-container {
+        grid-template-columns: 400px auto;
+        grid-template-rows: 100px auto 200px;
+        grid-template-areas: 
+        "header navbar"
+        "main main"
+        "footer footer";
+    }
+}
+
+
+/* Fin del sector grid-container */
 
 /* -------------------------------------------------------- */

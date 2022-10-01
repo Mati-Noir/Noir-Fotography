@@ -191,7 +191,6 @@ footer{
     color:cadetblue;
 }
 
-
 .socials{
     list-style: none;
     display: flex;
@@ -330,7 +329,7 @@ h1:hover{
 /* Comienzo del Sector Galeria */
 
 .estructura_galeria{
-    background-size: cover;
+    background-size: cover; 
     display: flex;
     flex-wrap: wrap;
     padding: 30px;
