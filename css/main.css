@@ -1,11 +1,11 @@
 /* -------------------- Comienzo del grid del index -------------------- */
 /* Variables Map Color (Vista en el archivo SASS) */
 /* Fin mapa de variables (Vista en el archivo SASS) */
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0; }
-
+/* * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0; 
+} */
 html {
   height: 100%; }
 
@@ -80,8 +80,7 @@ li a {
 /* Comienzo del sector footer renovado */
 footer {
   background: #111;
-  height: auto;
-  padding-top: 40px;
+  height: 230px;
   color: aliceblue; }
 
 .footer-content, .footer-content--color {
@@ -178,7 +177,6 @@ h2 {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  width: 100%;
   height: auto;
   padding: 10px;
   gap: 30px;
@@ -232,10 +230,27 @@ h1 {
   flex-direction: column;
   gap: 10px;
   color: white;
-  align-items: center; }
+  align-items: center;
+  min-width: 300px; }
 
 .estructura_boton {
   padding: 100px; }
+
+/* Fin del sector Contacto */
+/* -------------------------------------------------------- */
+/* Sector Terminos y Condiciones */
+.texto_terminos {
+  text-align: center;
+  font-size: larger;
+  line-height: 200%;
+  font-style: italic; }
+
+.about_us {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  min-width: 300px;
+  height: auto; }
 
 /* Fin del sector Contacto */
 /* -------------------------------------------------------- */

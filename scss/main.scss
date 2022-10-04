@@ -8,11 +8,11 @@ $estilos: (
 );
 /* Fin mapa de variables (Vista en el archivo SASS) */
 
-* {
+/* * {
     box-sizing: border-box;
     margin: 0;
-    padding: 0;
-}
+    padding: 0; 
+} */
 
 
 html {
@@ -136,8 +136,7 @@ li a{
 
 footer{
     background:  #111;
-    height: auto;
-    padding-top: 40px;
+    height: 230px;
     color: aliceblue;
 }
 
@@ -264,7 +263,6 @@ h2{
 
 .estructura_anecdotas{
     @include flex-wrap-space_evenly;
-    width: 100%;
     height: auto;
     padding: 10px;
     gap: 30px;
@@ -336,12 +334,32 @@ h1{
     gap: 10px;
     color: map-get($estilos, colorLetrasFormulario);
     align-items: center;
+    min-width: 300px;
 }
 
 .estructura_boton{
     padding: 100px
 }
 
+
+/* Fin del sector Contacto */
+
+/* -------------------------------------------------------- */
+
+/* Sector Terminos y Condiciones */
+
+.texto_terminos{
+    text-align: center;
+    font-size: larger;
+    line-height: 200%;
+    font-style: italic;
+}
+
+.about_us{
+    @include flex-wrap-space_evenly;
+    min-width: 300px;
+    height: auto;
+}
 
 /* Fin del sector Contacto */
 
