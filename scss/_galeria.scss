@@ -1,0 +1,34 @@
+/* -------------------------------------------------------- */
+/* Comienzo del Sector Galeria */
+
+@mixin flex-wrap-space_evenly{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.estructura_galeria{
+    @include flex-wrap-space_evenly;
+    padding: 30px;
+    gap: 10px;
+    width: 100%;
+    height: auto;
+    -webkit-transition: 1s linear;
+    transition: 1s linear;
+}
+
+
+.fotos_galeria{
+    filter: grayscale(100%);
+    transition: 6s;
+    &:hover{
+        -webkit-transition: 0.5s linear;
+        transition: 0.5s linear;
+        -webkit-box-shadow: 10px 10px 14px 2px rgba(0,0,0,0.47);
+        box-shadow: 10px 10px 14px 2px rgba(0,0,0,0.47);
+        filter: none
+    }
+}
+
+/* Fin del sector Galeria */
+/* -------------------------------------------------------- */

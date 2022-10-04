@@ -1,0 +1,22 @@
+/* -------------------------------------------------------- */
+/* Comienzo del Sector Biografia */
+
+.sector_biografia{
+    font-family: 'Montserrat', sans-serif;
+    padding: 3%;
+    text-align: center;
+    line-height: 150%;
+}
+
+
+.autor_biografia{
+    -webkit-transition: font-size 1s ease;
+    transition: font-size 1s ease;
+    &:hover{
+        font-size: 40px;
+    }
+}
+
+/* Fin del sector Biografia */
+
+/* -------------------------------------------------------- */

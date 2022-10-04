@@ -1,0 +1,22 @@
+/* Sector Extras */
+
+@mixin flex-wrap-space_evenly{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.texto_terminos{
+    text-align: center;
+    font-size: larger;
+    line-height: 200%;
+    font-style: italic;
+}
+
+.about_us{
+    @include flex-wrap-space_evenly;
+    min-width: 300px;
+    height: auto;
+}
+
+/* Fin del sector Extras */

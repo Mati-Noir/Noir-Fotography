@@ -1,0 +1,30 @@
+/* -------------------------------------------------------- */
+/* Comienzo del Sector Anecdotas */
+
+@mixin flex-wrap-space_evenly{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.estructura_anecdotas{
+    @include flex-wrap-space_evenly;
+    height: auto;
+    padding: 10px;
+    gap: 30px;
+    text-align: center;
+    line-height: 150%;
+}
+
+
+h1{
+    -webkit-transition: font-size 1s ease;
+    transition: font-size 1s ease;
+    font-style: italic;
+    &:hover{
+        font-size: 50px;
+    }
+}
+
+/* Fin del sector Anecdotas */
+/* -------------------------------------------------------- */

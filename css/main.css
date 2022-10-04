@@ -1,11 +1,132 @@
+/* -------------------------------------------------------- */
+/* Comienzo del sector index */
+h2 {
+  background-color: lightblue;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 30px;
+  text-transform: uppercase;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-style: italic;
+  -webkit-transition: font-size 1s ease;
+  transition: font-size 1s ease; }
+  h2:hover {
+    font-size: 35px; }
+
+.estructura_cartas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  gap: 30px; }
+
+/* Fin del index */
+/* -------------------------------------------------------- */
+/* -------------------------------------------------------- */
+/* Comienzo del Sector Biografia */
+.sector_biografia {
+  font-family: 'Montserrat', sans-serif;
+  padding: 3%;
+  text-align: center;
+  line-height: 150%; }
+
+.autor_biografia {
+  -webkit-transition: font-size 1s ease;
+  transition: font-size 1s ease; }
+  .autor_biografia:hover {
+    font-size: 40px; }
+
+/* Fin del sector Biografia */
+/* -------------------------------------------------------- */
+/* -------------------------------------------------------- */
+/* Comienzo del Sector Anecdotas */
+.estructura_anecdotas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  height: auto;
+  padding: 10px;
+  gap: 30px;
+  text-align: center;
+  line-height: 150%; }
+
+h1 {
+  -webkit-transition: font-size 1s ease;
+  transition: font-size 1s ease;
+  font-style: italic; }
+  h1:hover {
+    font-size: 50px; }
+
+/* Fin del sector Anecdotas */
+/* -------------------------------------------------------- */
+/* -------------------------------------------------------- */
+/* Comienzo del Sector Galeria */
+.estructura_galeria {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 30px;
+  gap: 10px;
+  width: 100%;
+  height: auto;
+  -webkit-transition: 1s linear;
+  transition: 1s linear; }
+
+.fotos_galeria {
+  filter: grayscale(100%);
+  transition: 6s; }
+  .fotos_galeria:hover {
+    -webkit-transition: 0.5s linear;
+    transition: 0.5s linear;
+    -webkit-box-shadow: 10px 10px 14px 2px rgba(0, 0, 0, 0.47);
+    box-shadow: 10px 10px 14px 2px rgba(0, 0, 0, 0.47);
+    filter: none; }
+
+/* Fin del sector Galeria */
+/* -------------------------------------------------------- */
+/* -------------------------------------------------------- */
+/* Comienzo del Sector Formulario */
+.estructura_formulario {
+  background-image: url(../images/Atardecer.jpg);
+  background-size: cover;
+  text-align: center; }
+
+.formulario {
+  font-family: 'Montserrat', sans-serif;
+  line-height: 100px;
+  font-size: 200%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  color: white;
+  align-items: center;
+  min-width: 300px; }
+
+.estructura_boton {
+  padding: 100px; }
+
+/* Fin del sector Contacto */
+/* -------------------------------------------------------- */
+/* Sector Extras */
+.texto_terminos {
+  text-align: center;
+  font-size: larger;
+  line-height: 200%;
+  font-style: italic; }
+
+.about_us {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  min-width: 300px;
+  height: auto; }
+
+/* Fin del sector Extras */
 /* -------------------- Comienzo del grid del index -------------------- */
 /* Variables Map Color (Vista en el archivo SASS) */
 /* Fin mapa de variables (Vista en el archivo SASS) */
-/* * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0; 
-} */
 html {
   height: 100%; }
 
@@ -18,7 +139,7 @@ p {
   padding: 20px; }
 
 .grid-container > * {
-  padding: 10px;
+  /*     padding: 10px; */
   text-align: center; }
 
 .header {
@@ -72,8 +193,13 @@ li a {
   font-weight: bold; }
 
 .links_nav {
-  padding-left: 100px;
-  padding-right: 100px; }
+  padding-left: 120px;
+  padding-right: 120px; }
+
+.noir_logo {
+  height: auto;
+  width: 80%;
+  margin-top: 10px; }
 
 /* Fin del sector Navbar / Header */
 /* -------------------------------------------------------- */
@@ -120,139 +246,7 @@ footer {
       font-size: 1.1rem;
       transition: color .4s ease; }
 
-.footer-bottom {
-  background: #000;
-  width: 99vw;
-  /*     padding: 20px 0; */
-  text-align: center; }
-  .footer-bottom p {
-    font-size: 14px;
-    word-spacing: 2px;
-    text-transform: capitalize; }
-
 /* Fin del sector footer */
-/* -------------------------------------------------------- */
-/* Comienzo del sector index */
-h2 {
-  background-color: lightblue;
-  text-align: center;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 30px;
-  text-transform: uppercase;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  font-style: italic;
-  -webkit-transition: font-size 1s ease;
-  transition: font-size 1s ease; }
-  h2:hover {
-    font-size: 35px; }
-
-.estructura_cartas {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  padding-top: 50px;
-  padding-bottom: 50px;
-  gap: 30px; }
-
-/* Fin del index */
-/* -------------------------------------------------------- */
-/* Comienzo del Sector Biografia */
-.sector_biografia {
-  font-family: 'Montserrat', sans-serif;
-  padding: 3%;
-  text-align: center;
-  line-height: 150%; }
-
-.autor_biografia {
-  -webkit-transition: font-size 1s ease;
-  transition: font-size 1s ease; }
-  .autor_biografia:hover {
-    font-size: 40px; }
-
-/* Fin del sector Biografia */
-/* -------------------------------------------------------- */
-/* Comienzo del Sector Anecdotas */
-.estructura_anecdotas {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  height: auto;
-  padding: 10px;
-  gap: 30px;
-  text-align: center;
-  line-height: 150%; }
-
-h1 {
-  -webkit-transition: font-size 1s ease;
-  transition: font-size 1s ease;
-  font-style: italic; }
-  h1:hover {
-    font-size: 50px; }
-
-/* Fin del sector Anecdotas */
-/* -------------------------------------------------------- */
-/* Comienzo del Sector Galeria */
-.estructura_galeria {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  padding: 30px;
-  gap: 10px;
-  width: 100%;
-  height: auto;
-  -webkit-transition: 1s linear;
-  transition: 1s linear; }
-
-.fotos_galeria {
-  filter: grayscale(100%);
-  transition: 6s; }
-  .fotos_galeria:hover {
-    -webkit-transition: 0.5s linear;
-    transition: 0.5s linear;
-    -webkit-box-shadow: 10px 10px 14px 2px rgba(0, 0, 0, 0.47);
-    box-shadow: 10px 10px 14px 2px rgba(0, 0, 0, 0.47);
-    filter: none; }
-
-/* Fin del sector Galeria */
-/* -------------------------------------------------------- */
-/* Comienzo del Sector Formulario */
-.estructura_formulario {
-  background-image: url(../images/Atardecer.jpg);
-  background-size: cover;
-  text-align: center; }
-
-.formulario {
-  font-family: 'Montserrat', sans-serif;
-  line-height: 100px;
-  font-size: 200%;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  color: white;
-  align-items: center;
-  min-width: 300px; }
-
-.estructura_boton {
-  padding: 100px; }
-
-/* Fin del sector Contacto */
-/* -------------------------------------------------------- */
-/* Sector Terminos y Condiciones */
-.texto_terminos {
-  text-align: center;
-  font-size: larger;
-  line-height: 200%;
-  font-style: italic; }
-
-.about_us {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  min-width: 300px;
-  height: auto; }
-
-/* Fin del sector Contacto */
 /* -------------------------------------------------------- */
 /* Sector de los grids y media queries para desktop / tablet / mobile */
 .grid-container {
@@ -263,13 +257,13 @@ h1 {
 @media (min-width: 250px) {
   .grid-container {
     grid-template-columns: auto;
-    grid-template-rows: 130px 170px auto 200px;
+    grid-template-rows: 100px 150px auto 200px;
     grid-template-areas: "header header" "navbar navbar" "main main" "footer footer"; } }
 
 @media (min-width: 768px) {
   .grid-container {
     grid-template-columns: 400px auto;
-    grid-template-rows: 170px auto 250px;
+    grid-template-rows: 150px auto 250px;
     grid-template-areas: "header navbar" "main main" "footer footer"; } }
 
 @media (min-width: 1024px) {
