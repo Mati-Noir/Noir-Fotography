@@ -20,7 +20,8 @@ h2 {
   justify-content: space-evenly;
   padding-top: 50px;
   padding-bottom: 50px;
-  gap: 30px; }
+  gap: 30px;
+  font-size: 120%; }
 
 /* Fin del index */
 /* -------------------------------------------------------- */
@@ -30,7 +31,8 @@ h2 {
   font-family: 'Montserrat', sans-serif;
   padding: 3%;
   text-align: center;
-  line-height: 150%; }
+  line-height: 150%;
+  font-size: 150%; }
 
 .autor_biografia {
   -webkit-transition: font-size 1s ease;
@@ -50,7 +52,8 @@ h2 {
   padding: 10px;
   gap: 30px;
   text-align: center;
-  line-height: 150%; }
+  line-height: 150%;
+  font-size: larger; }
 
 h1 {
   -webkit-transition: font-size 1s ease;
