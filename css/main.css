@@ -1,18 +1,23 @@
 /* -------------------------------------------------------- */
 /* Comienzo del sector index */
-h2 {
-  background-color: lightblue;
+.estructura_carousel {
+  margin: 15px;
+  display: flex;
+  justify-content: center; }
+
+h5 {
   text-align: center;
   font-family: 'Montserrat', sans-serif;
-  font-size: 30px;
+  font-weight: bolder;
+  font-size: 20px;
   text-transform: uppercase;
   margin-top: 10px;
   margin-bottom: 10px;
-  font-style: italic;
+  font-style: normal;
   -webkit-transition: font-size 1s ease;
   transition: font-size 1s ease; }
-  h2:hover {
-    font-size: 35px; }
+  h5:hover {
+    font-size: 25px; }
 
 .estructura_cartas {
   display: flex;
@@ -21,7 +26,17 @@ h2 {
   padding-top: 50px;
   padding-bottom: 50px;
   gap: 30px;
-  font-size: 120%; }
+  font-size: 105%; }
+
+.titulos {
+  -webkit-transition: font-size 1s ease;
+  transition: font-size 1s ease; }
+  .titulos:hover {
+    font-size: 35px; }
+
+.textos_carousel {
+  font-style: italic;
+  font-weight: 500; }
 
 /* Fin del index */
 /* -------------------------------------------------------- */
@@ -32,9 +47,11 @@ h2 {
   padding: 3%;
   text-align: center;
   line-height: 150%;
-  font-size: 150%; }
+  font-size: 130%; }
 
 .autor_biografia {
+  font-weight: bolder;
+  margin-top: 10px;
   -webkit-transition: font-size 1s ease;
   transition: font-size 1s ease; }
   .autor_biografia:hover {
@@ -105,7 +122,7 @@ h1 {
   gap: 10px;
   color: white;
   align-items: center;
-  min-width: 300px; }
+  font-weight: bolder; }
 
 .estructura_boton {
   padding: 100px; }
@@ -126,44 +143,59 @@ h1 {
   min-width: 300px;
   height: auto; }
 
+.titulo_extra {
+  padding: 15px; }
+
 /* Fin del sector Extras */
-/* -------------------- Comienzo del grid del index -------------------- */
-/* Variables Map Color (Vista en el archivo SASS) */
-/* Fin mapa de variables (Vista en el archivo SASS) */
-html {
-  height: 100%; }
-
-body {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 1.2rem;
-  min-height: 100%; }
-
-p {
-  padding: 20px; }
-
-.grid-container > * {
-  /*     padding: 10px; */
-  text-align: center; }
-
-.header {
-  grid-area: header; }
-
-.navbar {
-  grid-area: navbar;
-  background-color: #888; }
-
-.main {
-  grid-area: main;
-  background-color: lightsteelblue; }
-
-.footer {
-  grid-area: footer; }
-
-/* Fin del sector grid y sus denominaciones */
 /* -------------------------------------------------------- */
-/* Comienzo del Sector Mixins (SASS II) */
-/* Los mixins se van a encontrar dentro del archivo main.sass, por lo que en el main.css no se van a visualizar */
-/* Fin del sector Mixins */
+/* Comienzo del sector footer renovado */
+footer {
+  background: #111;
+  height: 250px;
+  color: aliceblue; }
+
+.footer-content, .footer-content--color {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center; }
+  .footer-content h3, .footer-content--color h3 {
+    margin-top: 10px;
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 3rem; }
+  .footer-content a, .footer-content--color a {
+    text-decoration: none;
+    color: cadetblue;
+    font-size: larger; }
+
+.footer-content--color {
+  color: blanchedalmond;
+  font-style: italic; }
+
+.socials {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  list-style: none;
+  align-items: center;
+  margin: 1rem 0 3rem 0;
+  scale: 105%; }
+  .socials li {
+    margin: 0 10px; }
+  .socials a {
+    text-decoration: none;
+    color: #fff; }
+    .socials a:hover i {
+      color: aqua; }
+    .socials a i {
+      font-size: 1.1rem;
+      transition: color .4s ease; }
+
+/* Fin del sector footer */
+/* -------------------------------------------------------- */
 /* -------------------------------------------------------- */
 /* Comienzo del sector Header */
 .header {
@@ -206,50 +238,43 @@ li a {
 
 /* Fin del sector Navbar / Header */
 /* -------------------------------------------------------- */
-/* Comienzo del sector footer renovado */
-footer {
-  background: #111;
-  height: 230px;
-  color: aliceblue; }
+/* -------------------- Comienzo del grid del index -------------------- */
+/* Variables Map Color (Vista en el archivo SASS) */
+/* Fin mapa de variables (Vista en el archivo SASS) */
+html {
+  height: 100%; }
 
-.footer-content, .footer-content--color {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.2rem;
+  min-height: 100%; }
+
+p {
+  padding: 20px; }
+
+.grid-container > * {
+  /*     padding: 10px; */
   text-align: center; }
-  .footer-content h3, .footer-content--color h3 {
-    font-size: 1,8rem;
-    font-weight: 400;
-    text-transform: capitalize;
-    line-height: 3rem; }
-  .footer-content a, .footer-content--color a {
-    text-decoration: none;
-    color: cadetblue; }
 
-.footer-content--color {
-  color: blanchedalmond;
-  font-style: italic; }
+.header {
+  grid-area: header; }
 
-.socials {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  list-style: none;
-  align-items: center;
-  margin: 1rem 0 3rem 0; }
-  .socials li {
-    margin: 0 10px; }
-  .socials a {
-    text-decoration: none;
-    color: #fff; }
-    .socials a:hover i {
-      color: aqua; }
-    .socials a i {
-      font-size: 1.1rem;
-      transition: color .4s ease; }
+.navbar {
+  grid-area: navbar;
+  background-color: #888; }
 
-/* Fin del sector footer */
+.main {
+  grid-area: main;
+  background-color: lightsteelblue; }
+
+.footer {
+  grid-area: footer; }
+
+/* Fin del sector grid y sus denominaciones */
+/* -------------------------------------------------------- */
+/* Comienzo del Sector Mixins (SASS II) */
+/* Los mixins se van a encontrar dentro del archivo main.sass, por lo que en el main.css no se van a visualizar */
+/* Fin del sector Mixins */
 /* -------------------------------------------------------- */
 /* Sector de los grids y media queries para desktop / tablet / mobile */
 .grid-container {

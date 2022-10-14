@@ -4,6 +4,8 @@
 @import "galeria";
 @import "contacto";
 @import "extras";
+@import "footer";
+@import "Navbar_header";
 
 
 /* -------------------- Comienzo del grid del index -------------------- */
@@ -83,122 +85,6 @@ p{
 }
 
 /* Fin del sector Mixins */
-
-/* -------------------------------------------------------- */
-
-/* Comienzo del sector Header */
-
-.header{
-    display: flex;
-    justify-content: center;
-    background-color: #222;
-}
-
-
-.navbar ul li a{
-    display: flex;
-    flex-direction: row;
-    justify-items: center;
-    font-family: 'Montserrat', sans-serif;
-    font-style: italic;
-    text-decoration: none;
-    font-size: 130%;
-    -webkit-transition: font-size 1s ease;
-    transition: font-size 1s ease;
-    &:hover{
-        font-size: 26px;
-    } 
-} 
-
-
-ul{
-    list-style-type: none;
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    flex-direction: row;
-}
-
-
-li a{
-    color:black;
-    font-weight: bold;
-}
-
-
-.links_nav{
-    padding-left: 120px;
-    padding-right: 120px;
-}
-
-
-.noir_logo{
-    height: auto;
-    width: 80%;
-    margin-top: 10px;
-}
-
-/* Fin del sector Navbar / Header */
-
-/* -------------------------------------------------------- */
-
-/* Comienzo del sector footer renovado */
-
-footer{
-    background:  #111;
-    height: 230px;
-    color: aliceblue;
-}
-
-
-.footer-content{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    text-align: center;
-    h3{
-        font-size: 1,8rem;
-        font-weight: 400;
-        text-transform: capitalize;
-        line-height: 3rem;
-    }
-    a{
-        text-decoration: none;
-        color:cadetblue;
-    }
-}
-
-
-.footer-content--color{
-    @extend .footer-content;
-    color:blanchedalmond;
-    font-style: italic;
-}
-
-
-.socials{
-    @include flex-row-center;
-    list-style: none;
-    align-items: center;
-    margin: 1rem 0 3rem 0;
-    li{
-        margin: 0 10px;
-    }
-    a{
-        text-decoration: none;
-        color: map-get($estilos, colorLogosRedes);
-        &:hover i{
-            color: aqua;
-        }
-        i{
-            font-size: 1.1rem;
-            transition: color .4s ease;
-        }
-    }
-}
-
-/* Fin del sector footer */
 
 /* -------------------------------------------------------- */
 

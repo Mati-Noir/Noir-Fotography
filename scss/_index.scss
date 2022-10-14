@@ -8,19 +8,26 @@
 }
 
 
-h2{
-    background-color:lightblue;
+.estructura_carousel{
+    margin: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+
+h5{
     text-align: center;
     font-family: 'Montserrat', sans-serif;
-    font-size: 30px;
+    font-weight: bolder;
+    font-size: 20px;
     text-transform: uppercase;
     margin-top: 10px;
     margin-bottom: 10px;
-    font-style: italic;
+    font-style: normal;
     -webkit-transition: font-size 1s ease;
     transition: font-size 1s ease;
     &:hover{
-        font-size: 35px;
+        font-size: 25px;
     }
 }
 
@@ -30,9 +37,21 @@ h2{
     padding-top: 50px;
     padding-bottom: 50px;
     gap: 30px;
-    font-size: 120%;
+    font-size: 105%;
 }
 
+.titulos{
+    -webkit-transition: font-size 1s ease;
+    transition: font-size 1s ease;
+    &:hover{
+        font-size: 35px;
+}
+}
+
+.textos_carousel{
+    font-style: italic;
+    font-weight: 500;
+}
 /* Fin del index */
 
 /* -------------------------------------------------------- */

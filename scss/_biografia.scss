@@ -6,11 +6,13 @@
     padding: 3%;
     text-align: center;
     line-height: 150%;
-    font-size: 150%;
+    font-size: 130%;
 }
 
 
 .autor_biografia{
+    font-weight: bolder;
+    margin-top: 10px;
     -webkit-transition: font-size 1s ease;
     transition: font-size 1s ease;
     &:hover{

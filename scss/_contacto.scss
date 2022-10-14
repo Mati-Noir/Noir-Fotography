@@ -23,11 +23,11 @@ $estilos: (
     gap: 10px;
     color: map-get($estilos, colorLetrasFormulario);
     align-items: center;
-    min-width: 300px;
+    font-weight: bolder;
 }
 
 .estructura_boton{
-    padding: 100px
+    padding: 100px;
 }
 
 
